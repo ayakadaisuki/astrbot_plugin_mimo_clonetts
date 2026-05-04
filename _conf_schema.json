@@ -1,0 +1,59 @@
+{
+  "api_key": {
+    "type": "string",
+    "description": "小米 MIMO API Key",
+    "placeholder": "sk-xxxx",
+    "required": true,
+    "hint": "在 https://platform.xiaomimimo.com 获取"
+  },
+  "endpoint": {
+    "type": "string",
+    "description": "API 端点",
+    "default": "https://api.xiaomimimo.com/v1/chat/completions",
+    "invisible": true
+  },
+  "model": {
+    "type": "string",
+    "description": "模型名称",
+    "default": "mimo-v2.5-tts-voiceclone",
+    "invisible": true
+  },
+  "selected_voice": {
+    "type": "string",
+    "description": "当前使用的音色文件名",
+    "default": "default.wav",
+    "hint": "填写 voices/ 目录下的文件名（如 default.wav, yuki.wav）。使用 /mimo_voices 查看列表"
+  },
+  "tts_probability": {
+    "type": "int",
+    "description": "被动触发概率 (%)",
+    "default": 80,
+    "min": 0,
+    "max": 100
+  },
+  "min_text_len": {
+    "type": "int",
+    "description": "最小文本长度",
+    "default": 5
+  },
+  "max_text_len": {
+    "type": "int",
+    "description": "最大文本长度",
+    "default": 200
+  },
+  "style_prompt": {
+    "type": "text",
+    "description": "默认风格指令",
+    "placeholder": "用轻快上扬的语调，语速稍快"
+  },
+  "exclusive_mode": {
+    "type": "bool",
+    "description": "独占模式（阻止其他 TTS 插件）",
+    "default": false
+  },
+  "enable_llm_tool": {
+    "type": "bool",
+    "description": "启用 LLM 工具调用",
+    "default": true
+  }
+}

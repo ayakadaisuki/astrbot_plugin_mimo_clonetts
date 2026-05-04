@@ -1,0 +1,12 @@
+name: astrbot_plugin_mimo_clonetts
+desc: 小米 MIMO 语音克隆 TTS 插件，支持音色复刻 + 风格控制
+version: 1.0.1
+author: ayakadaisuki
+display_name: MIMO 语音克隆
+short_desc: 用你的自定义声音说话
+tags:
+  - tts
+  - voice-clone
+  - mimo
+  - xiaomi
+astrbot_version: ">=4.16"
